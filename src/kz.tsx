@@ -62,7 +62,7 @@ export default function Command() {
         // Save to cache
         const cacheKey = debouncedSearchText.normalize("NFC").toLowerCase();
         const cacheEntry: CacheEntry = {
-          data,
+          data: data as AddressResult[],
           timestamp: Date.now(),
           expiresAt: Date.now() + CACHE_DURATION,
         };
@@ -85,7 +85,7 @@ export default function Command() {
       throttle
     >
       <List.Section title={strings.resultsTitle} subtitle={data?.length + ""}>
-        {data?.map((searchResult) => (
+        {data?.map((searchResult: AddressResult, index: number) => (
           <SearchListItem
             key={searchResult.id}
             searchResult={searchResult}
@@ -184,7 +184,7 @@ async function parseFetchResponse(response: Response): Promise<AddressResult[]> 
     throw new Error(json.error || response.statusText);
   }
 
-  return json.results.map((result, index) => {
+  return (json as { results: any[] }).results.map((result: any, index: number) => {
     const buildingName = result.building_name ? ` (${result.building_name})` : "";
     return {
       id: `${result.postcode5}-${index}`,
