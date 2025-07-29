@@ -19,7 +19,7 @@ A Raycast extension for searching Korean addresses using the Postcodify API. Qui
 2. Or install locally:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/kyungw00k/raycast-kozip-extension.git
    cd raycast-korea-zipcode-finder
    npm install
    npm run dev
@@ -155,6 +155,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 If you encounter issues or have suggestions:
 
-1. Check existing [issues](https://github.com/your-repo/issues)
+1. Check existing [issues](https://github.com/kyungw00k/raycast-kozip-extension/issues)
 2. Create a new issue with detailed information
 3. For feature requests, use the enhancement label

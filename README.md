@@ -18,7 +18,7 @@ Postcodify API를 사용하여 한국 주소를 검색하는 Raycast 확장입�
 1. [Raycast Store](https://raycast.com/store)에서 확장 설치
 2. 또는 로컬 설치:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/kyungw00k/raycast-kozip-extension.git
    cd raycast-korea-zipcode-finder
    npm install
    npm run dev
@@ -143,6 +143,6 @@ MIT License - 자세한 내용은 [LICENSE](LICENSE) 파일 참조.
 ## 지원
 
 문제가 발생하거나 제안사항이 있으면:
-1. 기존 [이슈](https://github.com/your-repo/issues) 확인
+1. 기존 [이슈](https://github.com/kyungw00k/raycast-kozip-extension/issues) 확인
 2. 상세한 정보와 함께 새 이슈 생성
 3. 기능 요청은 enhancement 라벨 사용

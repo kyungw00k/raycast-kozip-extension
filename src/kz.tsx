@@ -112,12 +112,11 @@ function SearchListItem({
 }) {
   return (
     <List.Item
-      title={
-        `${searchResult.postcode5} ${showJibunAddress
+      title={`${searchResult.postcode5} ${
+        showJibunAddress
           ? searchResult.full_ko_jibeon || strings.noAddressInfo
           : searchResult.full_ko_doro || strings.noAddressInfo
-        }`
-      }
+      }`}
       subtitle={showJibunAddress ? searchResult.full_en_jibeon : searchResult.full_en_doro}
       actions={
         <ActionPanel>
