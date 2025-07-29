@@ -137,6 +137,7 @@ MIT License - 자세한 내용은 [LICENSE](LICENSE) 파일 참조.
 
 - **API**: [Postcodify](https://postcodify.poesis.kr/) by Poesis
 - **지도**: 카카오맵, 네이버 지도 연동
+- **아이콘**: [한국 우정사업본부 엠블럼](https://ko.m.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC:Emblem_of_Korea_Post.svg)을 기반으로 제작
 - **작성자**: [kyungw00k](https://github.com/kyungw00k)
 
 ## 지원

@@ -148,6 +148,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 - **API**: [Postcodify](https://postcodify.poesis.kr/) by Poesis
 - **Maps**: Kakao Map, Naver Map integration
+- **Icon**: Based on [Korea Post Emblem](https://ko.m.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC:Emblem_of_Korea_Post.svg)
 - **Author**: [kyungw00k](https://github.com/kyungw00k)
 
 ## Support

@@ -3,7 +3,7 @@
   "name": "raycast-kozip-extension",
   "title": "Kozip",
   "description": "South Korea Postal Code Search",
-  "icon": "extension-icon.png",
+  "icon": "icon.png",
   "author": "kyungw00k",
   "license": "MIT",
   "commands": [
