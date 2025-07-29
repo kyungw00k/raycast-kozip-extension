@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.0.0] - 2025-01-29
+## [1.0.0] - 2025-07-29
 
 ### Added
 - Initial release of Korean Postal Code Search extension

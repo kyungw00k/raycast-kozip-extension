@@ -50,76 +50,15 @@ Postcodify API를 사용하여 한국 주소를 검색하는 Raycast 확장입�
 - **도로명 주소**: `123 Teheran-ro, Gangnam-gu, Seoul (12345)`
 - **지번 주소**: `123-45 Yeoksam-dong, Gangnam-gu, Seoul (12345)`
 
-## 아키텍처
-
-### 프로젝트 구조
-```
-src/
-├── kz.tsx              # 메인 확장 로직
-└── locales/            # 국제화
-    ├── index.ts        # 로케일 유틸리티
-    ├── ko.json         # 한국어 문자열
-    └── en.json         # 영어 문자열
-```
-
-### 주요 컴포넌트
-- **Command()**: 메인 검색 인터페이스 컴포넌트
-- **SearchListItem()**: 개별 주소 결과 컴포넌트
-- **getLocalizedStrings()**: 동적 로케일 로딩 (fallback 포함)
-- **parseFetchResponse()**: API 응답 파서
-
-## 새 언어 추가
-
-새로운 언어 지원을 추가하려면:
-
-1. 새 로케일 파일 생성: `src/locales/{언어코드}.json`
-2. `en.json`의 구조를 복사하고 문자열 번역
-3. 확장이 자동으로 새 로케일을 감지하고 로드
-
-일본어 예시 (`ja.json`):
-```json
-{
-  "searchPlaceholder": "韓国の住所を検索...",
-  "resultsTitle": "検索結果",
-  "copyKoreanAddress": "韓国住所をコピー",
-  ...
-}
-```
-
-## API 통합
-
-주소 데이터를 위해 [Postcodify API](https://postcodify.poesis.kr/) 사용:
-- **엔드포인트**: `https://api.poesis.kr/post/search.php`
-- **기능**: 실시간 검색, 한국어/영어 결과, 건물명 지원
-- **캐싱**: 성능 향상을 위한 24시간 로컬 캐시
-
 ## 개발
 
-### 설정
+자세한 개발 가이드는 [DEVELOPMENT.md](DEVELOPMENT.md)를 참조하세요.
+
+### 빠른 시작
 ```bash
 npm install
 npm run dev
 ```
-
-### 명령어
-- `npm run dev` - 핫 리로드로 개발 시작
-- `npm run build` - 프로덕션 빌드
-- `npm run lint` - ESLint 검사 실행
-- `npm run fix-lint` - 린트 이슈 자동 수정
-- `npm run publish` - Raycast Store에 게시
-
-### 기술 스택
-- **Raycast API**: 확장 프레임워크
-- **TypeScript**: 타입 안전 개발
-- **React Hooks**: 상태 관리
-- **Postcodify API**: 주소 데이터 소스
-
-## 캐시 관리
-
-확장에서 구현된 지능형 캐싱:
-- **기간**: 검색 쿼리당 24시간
-- **저장소**: 자동 정리 기능이 있는 로컬 스토리지
-- **이점**: 빠른 반복 검색, API 호출 감소
 
 ## 기여
 
